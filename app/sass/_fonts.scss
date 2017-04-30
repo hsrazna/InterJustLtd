@@ -1,6 +1,13 @@
 // @import "bourbon";
 
-@include font-face(SourceSansPro, '/fonts/Source_Sans_Pro/SourceSansPro-Regular');
+@include font-face(ArimoBold, '/fonts/ArimoBold/ArimoBold');
+@include font-face(ArimoRegular, '/fonts/ArimoRegular/ArimoRegular');
+@include font-face(RobotoBold, '/fonts/RobotoBold/RobotoBold');
+@include font-face(RobotoCondensedBold, '/fonts/RobotoCondensedBold/RobotoCondensedBold');
+@include font-face(RobotoCondensedLight, '/fonts/RobotoCondensedLight/RobotoCondensedLight');
+@include font-face(RobotoCondensedRegular, '/fonts/RobotoCondensedRegular/RobotoCondensedRegular');
+@include font-face(BebasNeueBold, '/fonts/BebasNeueBold/BebasNeueBold');
+
 // +font-face("ArimoBold", "../fonts/Lato-Black/Lato-Black", $file-formats: eot woff ttf);
 // +font-face("ArimoBold", "../fonts/Lato-Bold/Lato-Bold", $file-formats: eot woff ttf);
 // +font-face("ArimoBold", "../fonts/Lato-Light/Lato-Light", $file-formats: eot woff ttf);
