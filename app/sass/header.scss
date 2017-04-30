@@ -1,0 +1,129 @@
+@import "vars";
+
+.az-header-top{
+	background: #444b50;
+	height: 23px;
+	line-height: 23px;
+	@include mobile(768){
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+.az-main-menu{
+	line-height: 23px;
+	font-size: 0;
+	@include mobile(768){
+		line-height: 40px;
+	}
+}
+
+.az-menu-icon{
+	font-size: 0;
+	background: transparent url('../img/az-menu-icon.png') left top no-repeat;
+	width: 23px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	@include mobile(768){
+		display: none;
+	}
+}
+
+.az-menu-list{
+	display: none;
+	position: absolute;
+	font-size: 0;
+	line-height: 24px;
+	color: #fff;
+	font-family: "ArimoBold";
+	background: #444b50;
+	border-top: 1px solid #fff;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	padding: 5px 0;
+	animation: fade-in .15s ease-in;
+	@include mobile(768){
+		border-top: 0;
+		display: block;
+		line-height: 40px;
+		// padding: 0;
+		padding: 0 9px;
+	}
+	&.on{
+		display: block;
+	}
+	li{
+		list-style-type: none;
+		font-size: 12px;
+		@include mobile(768){
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	a{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 10px;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		width: 100%;
+		&:hover{
+			color: #edd536;
+		}
+		&.active{
+			position: relative;
+			&::after{
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0;
+				height: 0;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-top: 8px solid #444b50;
+			}
+		}
+	}
+}
+
+@keyframes fade-in{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.az-lang{
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 0;
+	a{
+		display: inline-block;
+		vertical-align: top;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 13px;
+		font-family: "RobotoCondensedBold";
+		&:hover{
+			color: #edd536;
+		}
+	}
+	span{
+		display: inline-block;
+		vertical-align: top;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 13px;
+		font-family: "RobotoCondensedBold";
+		margin: 0 3px;
+	}
+}
