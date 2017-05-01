@@ -36,10 +36,25 @@
 <body>
 
 	<?php require_once "include/header.php"; ?>
-	<?php require_once "include/slider.php"; ?>
-	<?php require_once "include/main-catalog.php"; ?>
-	<?php require_once "include/news.php"; ?>
-	<?php require_once "include/testimonials.php"; ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+				<?php require_once "include/sidebar.php"; ?>
+				<?php require_once "include/news.php"; ?>
+				<?php require_once "include/banner.php"; ?>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+				<?php require_once "include/slider.php"; ?>
+				<?php require_once "include/features.php"; ?>
+				<?php require_once "include/ostavit-zayavku.php"; ?>
+				<?php require_once "include/our-advantages.php"; ?>
+				<?php require_once "include/our-partners.php"; ?>
+				<?php require_once "include/about.php"; ?>
+				<?php require_once "include/testimonials.php"; ?>
+				<?php require_once "include/location.php"; ?>
+			</div>
+		</div>
+	</div>
 	<?php require_once "include/footer.php"; ?>
 
 	<div class="hidden">
