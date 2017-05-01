@@ -1,0 +1,136 @@
+@import "vars";
+
+.az-sidebar{
+	padding-top: 10px;
+}
+
+.az-sidebar-item{
+	margin-bottom: 10px;
+	@include mobile(768){
+		margin-bottom: 20px;
+	}
+}
+
+.az-sidebar-item-head{
+	background: #3b65ba url(../img/az-menu-icon.png) no-repeat 8px center;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 44px;
+	font-family: "BebasNeueBold";
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	@include mobile(768){
+		padding-left: 62px;
+		background: #3b65ba url(../img/az-sidebar1.png) no-repeat 16px center;
+		font-size: 20px;
+	}
+	@include mobile(1200){
+		font-size: 22px;
+	}
+}
+
+.az-sidebar-item-list{
+	display: none;
+	padding: 0;
+	margin: 0;
+	border-left: 2px solid #3b65ba;
+	border-bottom: 4px solid #3b65ba;
+	border-right: 1px solid #d3d3d3;
+	@include mobile(768){
+		display: block;
+	}
+	li{
+		list-style-type: none;
+		border-bottom: 1px solid #d3d3d3;
+		&:last-child{
+			border-bottom: 0;
+		}
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+		padding: 12px 14px 12px 5px;
+		font-family: "RobotoCondensedRegular";
+		line-height: 16px;
+		font-size: 14px;
+		color: #3b413c;
+		text-decoration: none;
+		position: relative;
+		@include mobile(1200){
+			font-size: 16px;
+			padding: 12px 15px;
+		}
+		&:focus, &:active{
+			color: #3b413c;
+			text-decoration: none;
+		}
+		&:hover{
+			color: #3b413c;
+			text-decoration: none;
+			box-shadow: 0 0 5px #d3d3d3 inset;
+		}
+		&::before{
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			right: 3px;
+			position: absolute;
+			width: 7px;
+			height: 11px;
+			background: transparent url('../img/az-sidebar-arrow.png') center no-repeat;
+			@include mobile(1200){
+				right: 6px;
+				width: 10px;
+				height: 17px;
+				background: transparent url('../img/az-sidebar-arrow1200.png') center no-repeat;
+			}
+		}
+		&.active{
+			box-shadow: 0 0 5px #d3d3d3 inset;
+			&::before{
+				content: "";
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-left: 3px solid #3b65ba;
+				border-bottom: 3px solid transparent;
+				border-top: 3px solid transparent;
+				background: transparent;
+				@include mobile(1200){
+					border-left: 6px solid #3b65ba;
+					border-bottom: 6px solid transparent;
+					border-top: 6px solid transparent;
+				}
+			}
+		}
+	}
+}
+
+.az-sidebar-item.style2{
+	.az-sidebar-item-head{
+		background: #e74b3c url(../img/az-menu-icon.png) no-repeat 8px center;
+		@include mobile(768){
+			padding-left: 50px;
+			background: #e74b3c url(../img/as-sidebar2.png) no-repeat 14px center;
+		}
+	}
+	.az-sidebar-item-list{
+		border-left: 2px solid #e74b3c;
+		border-bottom: 4px solid #e74b3c;
+
+	}
+	a{
+		&.active{
+			&::before{
+				border-left: 3px solid #e74b3c;
+				@include mobile(1200){
+					border-left: 6px solid #e74b3c;
+				}
+			}
+		}
+	}
+}

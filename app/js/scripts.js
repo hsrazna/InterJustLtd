@@ -24,4 +24,10 @@ $(function() {
 		}
 	});
 	
+	$(".az-sidebar-item-head").click(function(){
+		if(window.matchMedia( "(max-width: 767px)" ).matches){
+			$(this).siblings(".az-sidebar-item-list").slideToggle(300);
+		}
+	})
+
 });
