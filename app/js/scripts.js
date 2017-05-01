@@ -30,4 +30,10 @@ $(function() {
 		}
 	})
 
+	$('.az-carousel').owlCarousel({
+		items: 1,
+		dots: true,
+		margin: 10
+	});
+
 });

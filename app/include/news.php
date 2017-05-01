@@ -1,1 +1,1 @@
-news.php
+<div class="hidden-xs">news.php</div>

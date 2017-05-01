@@ -1,1 +1,1 @@
-news.php
+<div class="hidden-xs">banner.php</div>
