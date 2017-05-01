@@ -8,6 +8,10 @@
 		height: 40px;
 		line-height: 40px;
 	}
+	@include mobile(1200){
+		height: 50px;
+		line-height: 50px;
+	}
 }
 
 .az-main-menu{
@@ -15,6 +19,9 @@
 	font-size: 0;
 	@include mobile(768){
 		line-height: 40px;
+	}
+	@include mobile(1200){
+		line-height: 50px;
 	}
 }
 
@@ -25,6 +32,7 @@
 	height: 18px;
 	display: inline-block;
 	vertical-align: middle;
+	outline: none;
 	@include mobile(768){
 		display: none;
 	}
@@ -48,8 +56,11 @@
 		border-top: 0;
 		display: block;
 		line-height: 40px;
-		// padding: 0;
-		padding: 0 9px;
+		padding: 0 10px;
+	}
+	@include mobile(1200){
+		line-height: 50px;
+		padding: 0 20px;
 	}
 	&.on{
 		display: block;
@@ -61,6 +72,9 @@
 			display: inline-block;
 			vertical-align: top;
 		}
+		@include mobile(1200){
+			font-size: 14px;
+		}
 	}
 	a{
 		display: inline-block;
@@ -70,6 +84,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		width: 100%;
+		outline: none;
 		&:hover{
 			color: #edd536;
 		}
@@ -88,6 +103,92 @@
 				border-top: 8px solid #444b50;
 			}
 		}
+		&.submenu{
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				@include mobile(768){
+					right: 0px;
+				}
+				transform: translateY(-50%);
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid #fff;
+			}
+			&:hover{
+				&::before{
+					border-top: 4px solid #edd536;
+				}
+			}
+		}
+	}
+	>li{
+		position: relative;
+		>ul{
+			display: none;
+			padding-left: 5px;
+			background: #444b50;
+			font-size: 0;
+			@include mobile(768){
+				padding: 5px;
+				line-height: 30px;
+			}
+			@include mobile(768){
+				position: absolute;
+				top: 100%;
+				left: 0;
+				padding-left: 0;
+				border-top: 1px solid #fff;
+				min-width: 100px;
+				&::after{
+					content: "";
+					position: absolute;
+					top: -7px;
+					left: 20px;
+					width: 0;
+					height: 0;
+					border-left: 8px solid transparent;
+					border-right: 8px solid transparent;
+					border-bottom: 8px solid #444b50;
+				}
+				&::before{
+					content: "";
+					position: absolute;
+					top: -8px;
+					left: 20px;
+					width: 0;
+					height: 0;
+					border-left: 8px solid transparent;
+					border-right: 8px solid transparent;
+					border-bottom: 8px solid #fff;
+				}
+			}
+			&.on{
+				display: block;
+				animation: fade-in .15s ease-in;
+				@include mobile(768){
+					animation: fade-in-down .3s ease-in-out;
+				}
+			}
+			li{
+				width: 100%;
+			}
+		}
+		@include mobile(1200){
+			&:hover{
+				>ul{
+					padding: 5px;
+					line-height: 34px;
+					display: block;
+					animation: fade-in-down .3s ease-in-out;
+				}
+			}
+		}
 	}
 }
 
@@ -97,6 +198,17 @@
 	}
 	to{
 		opacity: 1;
+	}
+}
+
+@keyframes fade-in-down{
+	from{
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
 	}
 }
 
@@ -125,5 +237,42 @@
 		font-size: 13px;
 		font-family: "RobotoCondensedBold";
 		margin: 0 3px;
+	}
+	@include mobile(1200){
+		span, a{
+			font-size: 14px;
+		}
+	}
+}
+
+.az-log-reg{
+	font-size: 0;
+	font-family: "ArimoBold";
+	text-transform: uppercase;
+	line-height: 50px;
+	width: 100%;
+	padding-left: 28px;
+	background: #63686c url('../img/az-log-reg.png') left 8px center no-repeat;
+	span{
+		font-size: 12px;
+		margin: 0 3px;
+		color: #fff;
+		display: inline-block;
+		vertical-align: top;
+	}
+	a{
+		font-size: 12px;
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		vertical-align: top;
+		&:active, &:focus{
+			text-decoration: none;
+			color: #fff;
+		}
+		&:hover{
+			text-decoration: none;
+			color: #edd536;
+		}
 	}
 }
