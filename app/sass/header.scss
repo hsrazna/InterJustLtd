@@ -1,5 +1,11 @@
 @import "vars";
 
+.az-center{
+	text-align: center;
+}
+
+/*header top*/
+
 .az-header-top{
 	background: #444b50;
 	height: 23px;
@@ -52,6 +58,7 @@
 	left: 0;
 	padding: 5px 0;
 	animation: fade-in .15s ease-in;
+	z-index: 9;
 	@include mobile(768){
 		border-top: 0;
 		display: block;
@@ -168,6 +175,9 @@
 					border-bottom: 8px solid #fff;
 				}
 			}
+			@include mobile(1200){
+				line-height: 30px;
+			}
 			&.on{
 				display: block;
 				animation: fade-in .15s ease-in;
@@ -182,8 +192,8 @@
 		@include mobile(1200){
 			&:hover{
 				>ul{
-					padding: 5px;
-					line-height: 34px;
+					// padding: 5px;
+					// line-height: 34px;
 					display: block;
 					animation: fade-in-down .3s ease-in-out;
 				}
@@ -253,12 +263,23 @@
 	width: 100%;
 	padding-left: 28px;
 	background: #63686c url('../img/az-log-reg.png') left 8px center no-repeat;
+	@include desktop(1200){
+		padding-left: 20px;
+		margin-top: 20px;
+		background: transparent url('../img/az-log-reg768.png') left 0px center no-repeat;
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+	}
 	span{
 		font-size: 12px;
 		margin: 0 3px;
 		color: #fff;
 		display: inline-block;
 		vertical-align: top;
+		@include desktop(1200){
+			color: #3b65ba;
+		}
 	}
 	a{
 		font-size: 12px;
@@ -266,6 +287,9 @@
 		text-decoration: none;
 		display: inline-block;
 		vertical-align: top;
+		@include desktop(1200){
+			color: #3b65ba;
+		}
 		&:active, &:focus{
 			text-decoration: none;
 			color: #fff;
@@ -274,5 +298,180 @@
 			text-decoration: none;
 			color: #edd536;
 		}
+	}
+}
+
+/*header top*/
+
+
+
+
+
+
+
+
+
+
+/*header bottom*/
+
+.az-header-bottom{
+}
+
+.az-logo{
+	padding-top: 24px;
+	text-align: center;
+	img{
+		width: 100%;
+		max-width: 230px;
+		height: auto;
+		@include mobile(1200){
+			width: auto;
+			max-width: 100%;
+		}
+	}
+}
+
+.az-contacts{
+	padding-top: 20px;
+	text-align: right;
+	@include mobile(1200){
+		padding-top: 5px;
+	}
+}
+
+.az-phone{
+	font-family: "ArimoRegular";
+	font-size: 34px;
+	line-height: 34px;
+	color: #949494;
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 25px;
+	background: transparent url('../img/az-phone.png') left center no-repeat;
+	white-space: nowrap;
+	strong{
+		font-weight: normal;
+		font-family: "ArimoBold";
+		color: #3b65ba;
+	}
+	&:active, &:focus, &:hover{
+		color: #949494;
+		text-decoration: none;
+		strong{
+			color: #3b65ba;
+		}
+	}
+}
+
+.az-worktime{
+	font-family: "ArimoRegular";
+	font-size: 13.5px;
+	color: #3b413c;
+	padding-left: 20px;
+	background: transparent url('../img/az-clock.png') left center no-repeat;
+}
+
+.az-header-links{
+	padding-bottom: 5px;
+	max-width: 730px;
+	margin: 0 auto;
+}
+
+.az-header-link{
+	font-family: "ArimoBold";
+	font-size: 12px;
+	display: inline-block;
+	height: 35px;
+	width: 100%;
+	border: 2px solid #e74b3c;
+	color: #e74b3c;
+	line-height: 33px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	@include mobile(768){
+		width: auto;
+		padding: 0 16px;
+	}
+	&:focus, &:active{
+		color: #e74b3c;
+		text-decoration: none;
+	}
+	&:hover{
+		color: #fff;
+		background: #e74b3c;
+		text-decoration: none;
+	}
+}
+
+.az-header-link2{
+	font-family: "ArimoBold";
+	font-size: 12px;
+	display: inline-block;
+	height: 35px;
+	width: 100%;
+	border: 2px solid #3b65ba;
+	color: #3b65ba;
+	line-height: 33px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	@include mobile(768){
+		width: auto;
+		padding: 0 14px;
+	}
+	@include mobile(1200){
+		padding: 0 20px;
+	}
+	&:focus, &:active{
+		color: #3b65ba;
+		text-decoration: none;
+	}
+	&:hover{
+		color: #fff;
+		background: #3b65ba;
+		text-decoration: none;
+	}
+}
+
+.az-header-link-block1, .az-header-link-block2, .az-header-link-block3{
+	width: 100%;
+	padding-top: 15px;
+	@include mobile(768){
+		width: auto;
+	}
+	@include mobile(1200){
+		padding-top: 25px;
+	}
+}
+
+.az-header-link-block3{
+	@include mobile(768){
+		margin-left: 21px;
+	}
+	@include mobile(1200){
+		margin-left: 45px;
+	}
+}
+
+.az-header-link-block2{
+	@include mobile(1200){
+		margin-left: 23px;
+	}
+}
+
+.az-call-back{
+	text-transform: uppercase;
+	color: #e74b3c;
+	text-decoration: underline;
+	font-family: "ArimoBold";
+	font-size: 12px;
+	&:active, &:focus{
+		color: #e74b3c;
+		text-decoration: underline;
+	}
+	&:hover{
+		color: #e74b3c;
+		text-decoration: none;
 	}
 }
