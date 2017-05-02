@@ -1,0 +1,95 @@
+@import "vars";
+
+.az-feature{
+	padding-top: 8px;
+	@include mobile(1200){
+		padding-top: 0;
+	}
+}
+
+.az-feature-item{
+	height: 192px;
+	width: 100%;
+	display: table;
+	background: #4b71bd;
+	border-collapse: separate;
+	border-spacing: 2px;
+	margin: 8px 0 0;
+
+	&:hover{
+		.az-feature-item-inner{
+			border: 2px solid #fff;
+		}
+	}
+}
+
+.az-feature-title{
+	min-height: 60px;
+	line-height: 60px;
+	font-size: 0;
+	h3{
+		font-family: "BebasNeueBold";
+		font-size: 29px;
+		line-height: 29px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: normal;
+		margin: 4px 0;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.az-feature-item-inner{
+	display: table-cell;
+	vertical-align: middle;
+	border: 2px solid transparent;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.az-feature-more{
+	a{
+		font-family: "ArimoBold";
+		font-size: 12px;
+		display: inline-block;
+		height: 35px;
+		width: 100px;
+		border: 2px solid #fff;
+		color: #fff;
+		line-height: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:focus, &:active{
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover{
+			color: #4b71bd;
+			background: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+.item1{
+	background: #4b71bd url(../img/az-feature1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.item2{
+	background: #d4493c url(../img/az-feature2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.item3{
+	background: #428a7f url(../img/az-feature3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.item4{
+	background: #fcb351 url(../img/az-feature4.jpg) no-repeat center;
+	background-size: cover;
+}
