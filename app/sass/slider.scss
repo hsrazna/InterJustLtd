@@ -1,7 +1,9 @@
 @import "vars";
 
 .az-carousel{
-	padding-top: 19px;
+	@include mobile(768){
+		padding-top: 19px;
+	}
 	@include mobile(1200){
 		padding-top: 22px;
 	}
