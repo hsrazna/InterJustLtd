@@ -1,0 +1,214 @@
+@import "vars";
+
+.ah-footer-bottom{
+	padding: 10px 0px;
+	background: #30363a;
+}
+.ah-footwrappbot-span{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #878e93;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+}
+.ah-footbox4-span{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #878e93;
+	font-size: 15px;
+	line-height: 43px;
+	text-transform: uppercase;
+	background: url(../img/ah-foottel.png) left center no-repeat;
+	padding-left: 20px;
+	@include mobile(992){
+		font-size: 20px;
+		line-height: 35px;
+	}
+	@include mobile(1200){
+		font-size: 30px;
+		line-height: 43px;
+	}
+	&:hover{
+		color: #878e93;
+		text-decoration: none;
+	}
+	span{
+		font-family: "ArimoBold";
+	}
+}
+.ah-footbox4-span1{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #878e93;
+	font-size: 10px;
+	line-height: 16px;
+	background: url(../img/ah-footclock.png) left center no-repeat;
+	padding-left: 20px;
+	@include mobile(992){
+		font-size: 12px;
+	}
+}
+.ah-footer-logoimgbox{
+	display: block;
+	width: 130px;
+	height: 45px;
+	background: url(../img/websurfers.svg) center center no-repeat;
+	background-size: 100% 100%;
+	@include mobile(992){
+		width: 165px;
+		height: 45px;
+	}
+	&:hover{
+		background: url(../img/websurfers_h.svg) center center no-repeat;
+		background-size: 100% 100%;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-footer{
+	background: #444b50;
+}
+.ah-footer-wrapp{
+	font-size: 0;
+	padding-top: 17px;
+	padding-bottom: 20px;
+}
+.ah-footer-box1, .ah-footer-box2, .ah-footer-box3, .ah-footer-box4{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ah-footer-box1{
+	display: none;
+	width: 30%;
+	border-right: none;
+	padding-right: 30px;
+	@include mobile(768){
+		display: inline-block;
+	}
+	@include mobile(992){
+		border-right: 1px solid #9ea3a8;
+	}
+	@include mobile(1200){
+		border-right: 1px solid #9ea3a8;
+	}
+}
+.ah-footer-box2{
+	width: 100%;
+	padding-left: 0px;
+	text-align: center;
+	@include mobile(768){
+		width: 28%;
+		text-align: left;
+	}
+	@include mobile(992){
+		padding-left: 30px;
+	}
+	@include mobile(1200){
+		padding-left: 60px;
+	}
+}
+.ah-footer-box3{
+	display: none;
+	width: 18%;
+	@include mobile(768){
+		display: inline-block;
+	}
+}
+.ah-footer-box4{
+	display: none;
+	width: 24%;
+	padding-left: 20px;
+	@include mobile(768){
+		display: inline-block;
+	}
+	@include mobile(992){
+		padding-left: 30px;
+	}
+	@include mobile(1200){
+		padding-left: 0px;
+	}
+}
+.ah-footbox2-span{
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	font-family: "RobotoCondensedBold";
+	margin-bottom: 15px;
+	@include mobile(768){
+		font-size: 12px;
+		line-height: 22px;
+		margin-bottom: 7px;
+	}
+	@include mobile(992){
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+}
+.ah-footbox2-list{
+	padding-left: 0px;
+	li{
+		display: inline-block;
+		margin-right: 9px;
+		@include mobile(768){
+			margin-right: 6px;
+		}
+		@include mobile(992){
+			margin-right: 10px;
+		}
+		a{
+			display: block;
+			width: 26px;
+			height: 26px;
+			background-size: 100% 100%;
+			&:hover{
+				background-size: 100% 100%;
+			}
+			@include mobile(992){
+				width: 30px;
+				height: 30px;
+			}
+		}
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+
+}
+.ah-ld{
+	background: url(../img/linkedin.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/linkedin_h.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-tw{
+	background: url(../img/twitter.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/twitter_h.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-in{
+	background: url(../img/insta.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/insta_h.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-fb{
+	background: url(../img/fb.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/fb_h.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-vk{
+	background: url(../img/vk.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/vk_h.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
