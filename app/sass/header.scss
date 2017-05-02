@@ -312,6 +312,9 @@
 
 .az-header-bottom{
 	background: #fff;
+	@include mobile(1200){
+		padding-bottom: 8px;
+	}
 }
 
 .az-logo{
@@ -372,6 +375,9 @@
 	padding-bottom: 5px;
 	max-width: 730px;
 	margin: 0 auto;
+	@include mobile(768){
+		padding-bottom: 7px;
+	}
 }
 
 .az-header-link{
