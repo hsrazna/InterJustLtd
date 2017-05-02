@@ -1,0 +1,69 @@
+@import "vars";
+
+.our-advantages{
+	padding-top: 50px;
+}
+
+.az-adv-item{
+	padding-top: 20px;
+	max-width: 400px;
+	margin: 0 auto;
+	@include mobile(768){
+		display: table;
+		padding-top: 30px;
+		width: 100%;
+		min-height: 75px;
+		max-width: 100%;
+	}
+}
+
+.az-adv-img{
+	text-align: center;
+	img{
+		width: 42px;
+		height: auto;
+	}
+	@include mobile(768){
+		display: table-cell;
+		width: 108px;
+		text-align: center;
+		vertical-align: middle;
+		img{
+			width: 60px;
+			height: auto;
+		}
+	}
+	@include mobile(1200){
+		width: 180px;
+		img{
+			width: 72px;
+			height: auto;
+		}
+	}
+}
+
+.az-adv-cont{
+	text-align: center;
+	@include mobile(768){
+		display: table-cell;
+		text-align: left;
+		vertical-align: middle;
+		padding-left: 15px;
+	}
+	h3{
+		font-family: "BebasNeueBold";
+		font-size: 30px;
+		color: #3b65ba;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin: 10px 0 5px;
+		line-height: 30px;
+	}
+	p{
+		font-family: "ArimoRegular";
+		font-size: 14px;
+		color: #3b413c;
+		line-height: 20px;
+		margin: 0 0 10px 0;
+	}
+}

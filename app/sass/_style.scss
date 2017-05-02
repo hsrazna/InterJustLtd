@@ -7,14 +7,75 @@ body{
 	background: #f7f9fa;
 }
 
+h2.main{
+	color: #3b413c;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	position: relative;
+	font-family: "ArimoBold";
+	text-transform: uppercase;
+	margin: 0;
+	@include mobile(768){
+		text-align: left;
+	}
+	@include mobile(1200){
+		font-size: 24px;
+		line-height: 24px;
+	}
+	span{
+		position: relative;
+		z-index: 6;
+		background: #f7f9fa;
+		@include mobile(768){
+			padding-right: 7px;
+		}
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		z-index: 3;
+		left: 0;
+		bottom: 3px;
+		width: 100%;
+		height: 2px;
+		background: #e4e5ed;
+		@include desktop(768){
+			display: none;
+		}
+	}
+}
+
 .az-center{
 	text-align: center;
 }
 
+.az-more{
+	color: #3598db;
+	padding-right: 7px;
+	background: url(../img/az-more.png) no-repeat top 2px right;
+	font-size: 12px;
+	font-family: "ArimoBold";
+	line-height: 16px;
+	text-decoration: none;
+	&:focus, &:active{
+		color: #3598db;
+		text-decoration: none;
+	}
+	&:hover{
+		color: #3598db;
+		text-decoration: underline;
+	}
+}
 
 @import "header";
 @import "sidebar";
 @import "slider";
+@import "news";
+@import "banner";
+@import "feature";
+@import "ostavit-zayavku";
+@import "our-advantages";
 
 
 // .az-div{

@@ -1,0 +1,39 @@
+@import "vars";
+
+.az-news-item{
+	padding-top: 20px;
+	border-bottom: 2px solid #ecf0f1;
+	h3{
+		font-family: "RobotoCondensedBold";
+		font-size: 18px;
+		color: #3b65ba;
+		font-weight: normal;
+		line-height: 22px;
+		margin: 15px 0 7px;
+		@include mobile(1200){
+			font-size: 20px;
+		}
+	}
+	p{
+		font-family: "ArimoRegular";
+		font-size: 14px;
+		line-height: 20px;
+		color: #3b413c;
+		margin: 0 0 15px 0;
+	}
+}
+
+.az-news-time{
+	padding: 0 5px;
+	line-height: 20px;
+	background: #e4e5ed;
+	font-family: "ArimoRegular";
+	color: #3b413c;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.az-more-news{
+	text-align: right;
+	padding: 7px 0;
+}

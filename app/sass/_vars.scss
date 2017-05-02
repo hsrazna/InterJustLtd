@@ -47,14 +47,14 @@
 .container{
     padding-left: 7px;
     padding-right: 7px;
-    >.row{
-        margin-left: -7px;
-        margin-right: -7px;
-        div[class^="col"]{
-            padding-left: 7px;
-            padding-right: 7px;
-        }
-    }
+}
+.row{
+    margin-left: -7px;
+    margin-right: -7px;
+}
+div[class^="col"]{
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 @media only screen and (min-width: 768px){

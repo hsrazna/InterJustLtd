@@ -1,1 +1,3 @@
-<div class="hidden-xs">banner.php</div>
+<div class="hidden-xs az-banner">
+	<img src="img/az-banner.jpg">
+</div>
