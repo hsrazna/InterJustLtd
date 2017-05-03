@@ -20,6 +20,8 @@
 	
 	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
 	<link rel="stylesheet" href="libs/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.css">
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -62,7 +64,8 @@
 	</div>
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<!-- <script src="libs/bootstrap/bootstrap.min.js"></script> -->
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="js/scripts.js"></script>
 

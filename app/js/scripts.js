@@ -63,4 +63,24 @@ $(function() {
 		margin: 10
 	});
 
+	$('.az-selectpicker').selectpicker({
+	  style: 'btn-info',
+	  size: 4
+	});
+
+	// jQuery("#az-slider").slider({
+	// 	min: parseInt($("input#minDist").val()),
+	// 	max: parseInt($("input#maxDist").val()),
+	// 	values: [parseInt($("input#startDist").val()),parseInt($("input#endDist").val())],
+	// 	range: true,
+	//     stop: function(event, ui) {
+	// 		jQuery("input#startDist").val(jQuery("#az-slider").slider("values",0)+" км.");
+	// 		jQuery("input#endDist").val(jQuery("#az-slider").slider("values",1)+" км.");
+	// 	},
+	// 	slide: function(event, ui){
+	// 		jQuery("input#startDist").val(jQuery("#az-slider").slider("values",0)+" км.");
+	// 		jQuery("input#endDist").val(jQuery("#az-slider").slider("values",1)+" км.");
+	// 	}
+	// }).draggable();
+
 });
