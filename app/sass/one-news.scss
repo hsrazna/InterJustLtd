@@ -1,0 +1,66 @@
+@import "vars";
+
+.az-one-news{
+	h1{
+		margin-bottom: 12px;
+	}
+	h2{
+		font-family: "RobotoCondensedBold";
+		font-size: 20px;
+		line-height: 22px;
+		color: #3b65ba;
+		margin-top: 8px;
+		margin-bottom: 5px;
+		min-height: 30px;
+		@include mobile(768){
+			font-family: "ArimoBold";
+			text-transform: uppercase;
+			color: #3b413c;
+		}
+		@include mobile(1200){
+			font-size: 26px;
+			line-height: 28px;
+			margin-bottom: 10px;
+		}
+	}
+	p{
+		font-family: "ArimoRegular";
+		font-size: 16px;
+		line-height: 22px;
+		color: #3b413c;
+		margin: 0 0 10px 0;
+		@include mobile(768){
+			font-size: 14px;
+			line-height: 18px;
+		}
+		@include mobile(1200){
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+
+.az-one-news-content{
+	margin-top: 10px;
+	@include mobile(1200){
+		margin-top: 22px;
+	}
+}
+
+.az-one-news-img{
+	max-width: 380px;
+	margin: 0 auto 7px;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	@include mobile(768){
+		max-width: 230px;
+		float: left;
+		margin: 0;
+		margin-right: 15px;
+	}
+	@include mobile(1200){
+		max-width: 380px;
+	}
+}
