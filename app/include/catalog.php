@@ -4,40 +4,44 @@
 		<div class="az-filter-col1">
 			<h3 class="az-select-title">Страна</h3>
 			<div class="az-select-wrap">
-				<select class="az-selectpicker">
-				  <option>Mustard</option>
-				  <option>Ketchup</option>
-				  <option>Relish</option>
+				<select class="az-select">
+				  <option>Франция</option>
+				  <option>Германия</option>
+				  <option>Польша</option>
+				  <option>Англия</option>
+				  <option>Финляндия</option>
 				</select>
 			</div>
 			<h3 class="az-select-title">Город</h3>
 			<div class="az-select-wrap">
-				<select class="az-selectpicker">
-				  <option>Mustard</option>
-				  <option>Ketchup</option>
-				  <option>Relish</option>
+				<select class="az-select">
+				  <option>Париж</option>
+				  <option>Берлин</option>
+				  <option>Варшава</option>
+				  <option>Лондон</option>
+				  <option>Хельсинки</option>
 				</select>
 			</div>
 		</div>
 		<div class="az-col2">
 			<h3 class="az-col2-title">Тип недвижимости</h3>
-			<h4>коммерческая</h4>
+			<h4 class="az-col2-subtitle">коммерческая</h4>
 			<div class="az-radio-wrap">
-				<input type="radio" name="radio1" id="">
-				<label>Коммерческая недвижимость</label>
+				<input type="radio" name="radio1" id="radio1">
+				<label for="radio1">Коммерческая недвижимость</label>
 			</div>
-			<h4>некоммерческая</h4>
+			<h4 class="az-col2-subtitle">некоммерческая</h4>
 			<div class="az-radio-wrap">
-				<input type="radio" name="radio1" id="">
-				<label>Квартиры, апартаменты</label>
-			</div>
-			<div class="az-radio-wrap">
-				<input type="radio" name="radio1" id="">
-				<label>Дома, виллы, коттеджи</label>
+				<input type="radio" name="radio1" id="radio2">
+				<label for="radio2">Квартиры, апартаменты</label>
 			</div>
 			<div class="az-radio-wrap">
-				<input type="radio" name="radio1" id="">
-				<label>Таунхаус</label>
+				<input type="radio" name="radio1" id="radio3">
+				<label for="radio3">Дома, виллы, коттеджи</label>
+			</div>
+			<div class="az-radio-wrap">
+				<input type="radio" name="radio1" id="radio4">
+				<label for="radio4">Таунхаус</label>
 			</div>
 		</div>
 		<div class="az-col3">

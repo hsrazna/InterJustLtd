@@ -32,7 +32,7 @@ $(function() {
 		margin: 10
 	});
 
-	$('.az-selectpicker').selectpicker({
+	$('.az-select').selectpicker({
 	  style: 'btn-info',
 	  size: 4
 	});
