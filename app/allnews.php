@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
 				<?php require_once "include/az-breadcrumbs.php"; ?>
-				<?php require_once "include/contact.php"; ?>
+				<?php require_once "include/allnews.php"; ?>
 			</div>
 		</div>
 	</div>

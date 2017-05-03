@@ -39,6 +39,19 @@ $(function() {
 	        }).filter(':first').click();
 	}
 
+	if($('ul.ah-allnews-list li a').length>0){
+	    var tabContainers = $('.ah-allnews-tabs-container > div');
+	    tabContainers.hide().filter(':first').show();
+	 
+	    $('ul.ah-allnews-list li a').click(function(){
+	        tabContainers.hide();
+	        tabContainers.filter(this.hash).show();
+	        $('ul.ah-allnews-list a').parent('li').removeClass('selected');
+	        $(this).parent('li').addClass('selected');
+	        return false;
+	        }).filter(':first').click();
+	}
+
 
 });
 
