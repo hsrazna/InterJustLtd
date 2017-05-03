@@ -32,24 +32,67 @@ $(function() {
 		margin: 10
 	});
 
-	$('.az-selectpicker').selectpicker({
+	$('.az-select').selectpicker({
 	  style: 'btn-info',
 	  size: 4
 	});
 
-	// jQuery("#az-slider").slider({
-	// 	min: parseInt($("input#minDist").val()),
-	// 	max: parseInt($("input#maxDist").val()),
-	// 	values: [parseInt($("input#startDist").val()),parseInt($("input#endDist").val())],
-	// 	range: true,
-	//     stop: function(event, ui) {
-	// 		jQuery("input#startDist").val(jQuery("#az-slider").slider("values",0)+" км.");
-	// 		jQuery("input#endDist").val(jQuery("#az-slider").slider("values",1)+" км.");
-	// 	},
-	// 	slide: function(event, ui){
-	// 		jQuery("input#startDist").val(jQuery("#az-slider").slider("values",0)+" км.");
-	// 		jQuery("input#endDist").val(jQuery("#az-slider").slider("values",1)+" км.");
-	// 	}
-	// }).draggable();
+	jQuery("#az-slider").slider({
+		min: parseInt($("input#minCost").val()),
+		max: parseInt($("input#maxCost").val()),
+		values: [parseInt($("input#startCost").val()),parseInt($("input#endCost").val())],
+		range: true,
+	    stop: function(event, ui) {
+			jQuery("input#startCost").val(jQuery("#az-slider").slider("values",0));
+			jQuery("input#endCost").val(jQuery("#az-slider").slider("values",1));
+		},
+		slide: function(event, ui){
+			jQuery("input#startCost").val(jQuery("#az-slider").slider("values",0));
+			jQuery("input#endCost").val(jQuery("#az-slider").slider("values",1));
+		}
+	}).draggable();
+
+	$(".az-DistSpan").focus(function(){
+		$(this).val("");
+	});
+
+	$(".az-DistSpan").keypress(function(event){
+		if(event.which == 13 || event.keyCode == 13){
+			$(this).trigger("blur");
+			return false;
+		}
+	});
+
+	$("#startCost").blur(function(){
+		if($(this).val() == ""){
+			$(this).val(jQuery("#az-slider").slider("values",0));
+		} else if(isNaN(parseInt($(this).val()))){
+			$(this).val(jQuery("#az-slider").slider("values",0));
+		} else{
+			var az_check_max_min = parseInt($(this).val());
+			if(az_check_max_min>=parseInt($("input#minCost").val())&&az_check_max_min<=parseInt($("input#endCost").val())){
+				$(this).val(parseInt($(this).val()));
+				jQuery("#az-slider").slider("values", 0, parseInt($(this).val()));
+			} else{
+				$(this).val(jQuery("#az-slider").slider("values",0));
+			}
+		}
+	});
+
+	$("#endCost").blur(function(){
+		if($(this).val() == ""){
+			$(this).val(jQuery("#az-slider").slider("values",1));
+		} else if(isNaN(parseInt($(this).val()))){
+			$(this).val(jQuery("#az-slider").slider("values",1));
+		} else{
+			var az_check_max_min = parseInt($(this).val());
+			if(az_check_max_min>=parseInt($("input#startCost").val())&&az_check_max_min<=parseInt($("input#maxCost").val())){
+				$(this).val(parseInt($(this).val()));
+				jQuery("#az-slider").slider("values", 1, parseInt($(this).val()));
+			} else{
+				$(this).val(jQuery("#az-slider").slider("values",1));
+			}
+		}
+	});
 
 });
