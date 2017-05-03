@@ -45,6 +45,7 @@
 			</div>
 		</div>
 		<div class="az-col3">
+			<h3 class="az-col3-title">Цена</h3>
 			<div class="clearfix az-range">
 				<div class="az-col3-left">
 					<span class="az-span-filter">От</span>
@@ -58,7 +59,7 @@
 				</div>
 			</div>
 			<div class="az-range-slider">
-				<div id="az-slider2"></div>
+				<div id="az-slider"></div>
 			</div>
 		</div>
 		<div class="az-col4">
