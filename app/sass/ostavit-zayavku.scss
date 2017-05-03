@@ -101,6 +101,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	background: #3b65ba;
+	transition: background 0.6s ease;
 	&:focus, &:active{
 		color: #fff;
 		text-decoration: none;

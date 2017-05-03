@@ -1,3 +1,15 @@
+@import "vars";
+
+/*filter*/
+
+.az-catalog{
+	@include mobile(768){
+		h1{
+			margin-bottom: 0;
+		}
+	}
+}
+
 .az-select-title{
 	color: #3b413c;
 	font-size: 22px;
@@ -19,7 +31,6 @@
 		padding-left: 10px;
 		height: 35px !important;
 		box-shadow: none !important;
-
 		&:hover, &:active, &:focus{
 			outline: 0 !important;
 			box-shadow: none !important;
@@ -125,6 +136,12 @@
 	margin: 30px 0 10px;
 	font-family: "ArimoBold";
 	font-weight: normal;
+	@include mobile(768){
+		margin: 20px 0 10px;
+	}
+	@include mobile(1200){
+		margin: 30px 0 10px;
+	}
 }
 
 #minCost, #maxCost{
@@ -173,6 +190,9 @@
 
 .az-range-slider{
 	padding: 30px 10px;
+	@include mobile(768){
+		padding: 30px 0px;
+	}
 	.ui-slider{
 		border: 0;
 		background: #90a6d3;
@@ -191,9 +211,262 @@
 		top: 5px;
 		margin-left: -15px;
 		outline: 0;
+		cursor: pointer;
 	}
 }
 
 .az-col4{
 	display: none;
 }
+
+.az-filter{
+	font-size: 0;
+}
+
+.az-filter-col1{
+	@include mobile(768){
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		padding-right: 12px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 20px;
+			right: 0;
+			width: 1px;
+			height: 230px;
+			background: #d9d9d9;
+		}
+	}
+	@include mobile(1200){
+		width: 33.33%;
+		&::after{
+			height: 180px;
+		}
+	}
+}
+
+.az-filter-col2{
+	@include mobile(768){
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		padding-left: 12px;
+
+	}
+	@include mobile(1200){
+		width: 33.33%;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 20px;
+			right: 0;
+			width: 1px;
+			height: 180px;
+			background: #d9d9d9;
+		}
+	}
+}
+
+.az-filter-col3{
+	@include mobile(768){
+		display: inline-block;
+		vertical-align: top;
+		width: 66.66%;
+		padding-right: 38px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 20px;
+			right: 0;
+			width: 1px;
+			height: 120px;
+			background: #d9d9d9;
+		}
+	}
+	@include mobile(1200){
+		width: 33.33%;
+		padding-left: 10px;
+		&::after{
+			display: none;
+		}
+	}
+}
+
+.az-filter-col4{
+	@include mobile(768){
+		display: inline-block;
+		vertical-align: top;
+		width: 33.33%;
+		padding-left: 12px;
+		padding-right: 15px;
+	}
+	@include mobile(1200){
+		width: 100%;
+	}
+}
+
+.az-filter-submit{
+	padding-top: 37px;
+	text-align: center;
+	@include mobile(1200){
+		padding-top: 5px;
+		text-align: right;
+		border-top: 2px solid #e4e5ed;
+	}
+	@include desktop(768){
+		display: none;
+	}
+	.az-submit{
+		height: 35px;
+		line-height: 31px;
+		font-size: 12px;
+		@include mobile(1200){
+			max-width: 120px;
+		}
+	}
+}
+
+.az-reset{
+	font-size: 12px;
+	font-family: "ArimoBold";
+	text-transform: uppercase;
+	background: transparent;
+	border: 0;
+	color: #3b65ba;
+	margin-top: 25px;
+	@include mobile(1200){
+		margin-left: 10px;
+		margin-top: 0px;
+	}
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+/*filter*/
+
+
+
+
+
+/*filter result*/
+
+.az-cat-result{
+	font-size: 0;
+	@include mobile(1200){
+		padding-top: 20px;
+	}
+}
+
+.az-result-col{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	width: 100%;
+	padding: 0 7px;
+	@include mobile(480){
+		width: 50%;
+	}
+	@include mobile(1200){
+		width: 33.33%;
+	}
+}
+
+.az-result-item{
+	max-width: 303px;
+	margin: 0 auto;
+	padding-top: 20px;
+	margin-top: 10px;
+	border-top: 2px solid #e4e5ed;
+	@include mobile(768){
+		border-bottom: 2px solid #e4e5ed;
+		border-top: 0;
+		padding-bottom: 10px;
+		margin-top: 0;
+	}
+	h3{
+		font-family: "RobotoCondensedBold";
+		color: #3b65ba;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 24px;
+		text-align: center;
+		margin: 15px 0 10px;
+	}
+	p{
+		color: #3b413c;
+		font-size: 18px;
+		font-family: "ArimoRegular";
+		line-height: 20px;
+		margin: 15px 0;
+		font-weight: normal;
+		@include mobile(768){
+			font-size: 15px;
+			margin-bottom: 0;
+		}
+		@include mobile(1200){
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.az-resilt-img{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.az-result-subtitle{
+	display: block;
+	color: #3b413c;
+	font-size: 18px;
+	font-family: "ArimoBold";
+	line-height: 20px;
+	text-align: center;
+}
+
+.az-res-more{
+	text-align: right;
+}
+
+.az-result-more{
+	margin-top: 20px;
+	text-align: center;
+	a{
+		text-align: center;
+		font-family: "ArimoBold";
+		font-size: 12px;
+		display: inline-block;
+		vertical-align: top;
+		height: 35px;
+		border: 2px solid #3b65ba;
+		color: #fff;
+		line-height: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #3b65ba;
+		padding: 0 15px;
+		transition: background 0.6s ease;
+		&:focus, &:active{
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover{
+			color: #3b65ba;
+			background: #fff;
+			text-decoration: none;
+		}
+	}
+	@include desktop(768){
+		display: none;
+	}
+}
+/*filter result*/
