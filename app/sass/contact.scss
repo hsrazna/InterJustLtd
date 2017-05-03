@@ -4,14 +4,27 @@
 
 
 
+
+
+
+.ah-contactbox-span{
+	display: block;
+	color: #3b413c;
+	font-family: "ArimoBold";
+	font-size: 22px;
+	line-height: 20px;
+}
 .ah-contact-list{
 	font-size: 0;
 	width: 100%;
 	padding-left: 0;
 	li{
-		display: inline-block;
+		display: block;
 		background: #90a6d3;
 		text-align: center;
+		@include mobile(768){
+			display: inline-block;
+		}
 		// cursor: pointer;
 		&:hover, &:active, &:focus{
 			background: #3b65ba;
@@ -21,26 +34,47 @@
 			padding: 6px 0px;
 			font-family: "ArimoBold";
 			color: #fff;
-			font-size: 14px;
+			font-size: 9px;
 			line-height: 22px;
 			text-transform: uppercase;
+			@include mobile(992){
+				font-size: 12px;
+			}
+			@include mobile(1200){
+				font-size: 14px;
+			}
 			&:hover, &:active, &:focus{
 				text-decoration: none;
 			}
 		}
 	}
 }
-.ah-active{
+.selected{
 	background: #3b65ba !important;
 }
 .ah-tab1{
-	width: 20%;
+	width: 100%;
+	margin: 5px 0px;
+	@include mobile(768){
+		width: 20%;
+		margin: 0px 0px;
+	}
 }
 .ah-tab2{
-	width: 47%;
+	width: 100%;
+	margin: 5px 0px;
+	@include mobile(768){
+		width: 47%;
+		margin: 0px 0px;
+	}
 }
 .ah-tab3{
-	width: 33%;
+	width: 100%;
+	margin: 5px 0px;
+	@include mobile(768){
+		width: 33%;
+		margin: 0px 0px;
+	}
 }
 .ah-contact-tabcell{
     width: 2%;
@@ -70,4 +104,67 @@
 #ah-map1{
 	width: 100%;
 	height: 252px;
+}
+#ah-map2{
+	width: 100%;
+	height: 252px;
+}
+.ah-tab1-subtitle1{
+	margin-top: 50px;
+}
+.ah-contact-box{
+	position: relative;
+	padding: 20px 20px 20px 55px;
+	background: #fff;
+	&::before{
+		position: absolute;
+		content: "";
+		background: url(../img/ah-contact-car.png);
+		width: 31px;
+		height: 20px;
+		left: 3%;
+		top: 25%;
+	}
+}
+.ah-contact-boxtext{
+	display: inline-block;
+	font-family: "ArimoRegular";
+	color: #3b413c;
+	font-size: 16px;
+	line-height: 20px;
+}
+.ah-contld{
+	background: url(../img/1linkedin.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/11linkedin.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-conttw{
+	background: url(../img/1twitter.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/11twitter.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-contin{
+	background: url(../img/1insta.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/11insta.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-contfb{
+	background: url(../img/1fb.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/11fb.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-contvk{
+	background: url(../img/1vk.svg) center center no-repeat;
+	&:hover{
+		background: url(../img/11vk.svg) center center no-repeat;
+		transition: background 0.6s ease 0s;
+	}
 }

@@ -41,8 +41,6 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
 				<?php require_once "include/sidebar.php"; ?>
-				<?php require_once "include/news.php"; ?>
-				<?php require_once "include/banner.php"; ?>
 			</div>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
 				<?php require_once "include/breadcrumbs.php"; ?>
