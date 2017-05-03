@@ -15,7 +15,7 @@ h2.main{
 	position: relative;
 	font-family: "ArimoBold";
 	text-transform: uppercase;
-	margin: 0;
+	margin: 30px 0 20px;
 	@include mobile(768){
 		text-align: left;
 	}
