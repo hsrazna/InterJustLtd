@@ -1,4 +1,8 @@
 <div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h2 class="main"><span>как нас найти</span></h2>
+	</div>
+	<div class="clearfix"></div>
 	<div class="col-lg-5 col-lg-push-7 col-md-5 col-md-push-7 col-sm-12 col-xs-12">
 		<div class="ah-location-info">
 			<div class="ah-location-table">

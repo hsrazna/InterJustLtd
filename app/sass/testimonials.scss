@@ -1,0 +1,62 @@
+@import "vars";
+
+
+
+
+
+.ah-more-news{
+	text-align: center !important;
+	@include mobile(768){
+		text-align: right !important;
+	}
+}
+.ah-testiwrapp{
+	margin-bottom: 30px;
+}
+.ah-testiwrapp-list{
+	padding-left: 0;
+	margin: 0;
+	li{
+		display: inline-block;
+		a{
+			display: inline-block;
+			font-family: "RobotoCondensedBold";
+			color: #3b65ba;
+			font-size: 16px;
+			line-height: 22px;
+		}
+		&:first-child{
+			padding-right: 6px;
+			border-right: 2px solid #3b65ba;
+		}
+		&:last-child{
+			padding-left: 6px;
+		}
+	}
+}
+.ah-testiwrapp-subtitle{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #3598db;
+	font-size: 14px;
+	line-height: 22px;
+	background: url(../img/ah-testi-vk.png) left center no-repeat;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	&:hover, &:focus{
+		color: #3598db;
+	}
+}
+.ah-testiwrapp-text{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #3b413c;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+	cursor: pointer;
+	&:hover{
+		text-decoration: underline;
+	}
+}

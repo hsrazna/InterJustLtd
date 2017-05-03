@@ -8,6 +8,7 @@
 .ah-imgbox320{
 	display: inline-block;
 	vertical-align: middle;
+	margin: 15px 15px;
 }
 .ah-slid-partners-wrapp320{
 	display: flex;
@@ -15,7 +16,10 @@
 	justify-content: center;
 	border: 3px solid #e4e5ed;
 	background: #fff;
-	padding: 37px 20px 43px 20px;
+	padding: 20px 0px 20px 0px;
+	@include mobile(768){
+		padding: 37px 20px 43px 20px;
+	}
 }
 .ah-slid-partners{
 	position: relative;
