@@ -1,12 +1,12 @@
 @import "vars";
 
 .az-carousel{
-	@include mobile(768){
-		padding-top: 19px;
-	}
-	@include mobile(1200){
-		padding-top: 22px;
-	}
+	// @include mobile(768){
+	// 	padding-top: 19px;
+	// }
+	// @include mobile(1200){
+	// 	padding-top: 22px;
+	// }
 	.owl-dots{
 		position: absolute;
 		bottom: 2px;

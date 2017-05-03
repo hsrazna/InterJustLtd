@@ -315,6 +315,13 @@
 	@include mobile(1200){
 		padding-bottom: 8px;
 	}
+	margin-bottom: 10px;
+	@include mobile(768){
+		margin-bottom: 19px;
+	}
+	@include mobile(1200){
+		margin-bottom: 22px;
+	}
 }
 
 .az-logo{
