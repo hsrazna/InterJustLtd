@@ -1,0 +1,53 @@
+@import "vars";
+
+
+
+
+
+
+.ah-imgbox320{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ah-slid-partners-wrapp320{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: 3px solid #e4e5ed;
+	background: #fff;
+	padding: 37px 20px 43px 20px;
+}
+.ah-slid-partners{
+	position: relative;
+	background: #fff;
+	border: 3px solid #e4e5ed;
+	padding-top: 37px;
+	padding-bottom: 43px;
+}
+.ah-imgbox{
+	display: inline-block;
+	vertical-align: middle;
+}
+.prev_arrs1{
+	position: absolute;
+	left: -25px;
+	top: 30%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e4e5ed;
+	border-radius: 50%;
+	background: url(../img/ah-arr-blu_l.png) calc(100% - 30%) center no-repeat #fff;
+}
+.next_arrs1{
+	position: absolute;
+	right: -25px;
+	top: 30%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e4e5ed;
+	border-radius: 50%;
+	background: url(../img/ah-arr-blu_r.png) calc(0% - -30%) center no-repeat #fff;
+}
+.ah-slid-partners-wrapp{
+	overflow: hidden;
+}
