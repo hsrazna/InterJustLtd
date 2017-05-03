@@ -6,7 +6,7 @@
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div id="tabs">
 			<ul class="ah-contact-list">
-				<li class="ah-tab1 ah-active"><a href="#tabs-1">контакты</a></li>
+				<li class="ah-tab1 selected"><a href="#tabs-1">контакты</a></li>
 				<li class="ah-tab2"><a href="#tabs-2">Ответы на часто задаваемые вопросы</a></li>
 				<li class="ah-tab3"><a href="#tabs-3">Вакансии</a></li>
 			</ul>
@@ -35,7 +35,7 @@
 					<span class="ah-tab1-subtitle">От ст.  м. Баррикадная:</span>
 					<div class="row">
 						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-							<div class="ah-location-mapbox">
+							<div class="ah-location-mapbox ah-contact-mapbox">
 								<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 								<script type="text/javascript">
 									ymaps.ready(init);
@@ -65,8 +65,61 @@
 								<div id="ah-map1"></div>
 							</div>
 						</div>
-						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+							<div class="ah-contact-box">
+								<p class="ah-contact-boxtext">Если вы хотите приехать на машине, сообщите нам об этом заранее – для клиентов компании предусмотрена бесплатная парковка.</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<span class="ah-tab1-subtitle ah-tab1-subtitle1">От ст. м. Краснопресненская:</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+							<div class="ah-location-mapbox ah-contact-mapbox">
+								<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+								<script type="text/javascript">
+									ymaps.ready(init);
+									 var myMap2,
+									     myPlacemark2;
 
+									 function init(){     
+									     myMap2 = new ymaps.Map("ah-map2", {
+									         center: [59.851245,30.479254],
+									         zoom: 16,
+									         controls: []
+									     });
+
+									    myMap2.behaviors.disable('scrollZoom'); 
+
+									     var myPlacemark2 = new ymaps.Placemark([59.851245,30.479254], {}, {
+									      iconLayout: 'default#image',
+									      iconImageHref: '/img/ah-bolun.png',
+									      iconImageSize: [20, 37],
+									      iconImageOffset: [-3, -42]
+									  });
+
+
+									     myMap2.geoObjects.add(myPlacemark2);
+									 }
+								</script>
+								<div id="ah-map2"></div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<div class="ah-contact-socbox hidden-sm hidden-xs">
+								<span class="ah-contactbox-span">Мы в социальных сетях</span>
+								<ul class="ah-footbox2-list">
+									<li><a href="#" class="ah-contld"></a></li>
+									<li><a href="#" class="ah-conttw"></a></li>
+									<li><a href="#" class="ah-contin"></a></li>
+									<li><a href="#" class="ah-contfb"></a></li>
+									<li><a href="#" class="ah-contvk"></a></li>
+								</ul>
+							</div>
+							<div class="ah-contact-box hidden-lg hidden-md">
+								<p class="ah-contact-boxtext">Если вы хотите приехать на машине, сообщите нам об этом заранее – для клиентов компании предусмотрена бесплатная парковка.</p>
+							</div>
 						</div>
 					</div>
 				</div>
