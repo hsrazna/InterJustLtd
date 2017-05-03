@@ -1,0 +1,32 @@
+@import "vars";
+
+.az-breadcrumbs{
+	font-size: 0;
+	margin: 0 0 10px 0;
+	padding: 0;
+	@include desktop(768){
+		display: none;
+	}
+	li{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+		line-height: 22px;
+		margin-right: 15px;
+	}
+	a{
+		color: #3b65ba;
+		text-decoration: underline;
+		&:focus, &:active{
+			color: #3b65ba;
+			text-decoration: underline;
+		}
+		&:hover{
+			color: #3b65ba;
+			text-decoration: none;
+		}
+	}
+	span{
+		color: #3b65ba;
+	}
+}

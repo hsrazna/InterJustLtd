@@ -20,7 +20,8 @@
 	
 	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
 	<link rel="stylesheet" href="libs/font-awesome.min.css">
-	
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.css">
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -41,18 +42,10 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
 				<?php require_once "include/sidebar.php"; ?>
-				<?php require_once "include/news.php"; ?>
-				<?php require_once "include/banner.php"; ?>
 			</div>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
-				<?php require_once "include/slider.php"; ?>
-				<?php require_once "include/features.php"; ?>
-				<?php require_once "include/ostavit-zayavku.php"; ?>
-				<?php require_once "include/our-advantages.php"; ?>
-				<?php require_once "include/our-partners.php"; ?>
-				<?php require_once "include/about.php"; ?>
-				<?php require_once "include/testimonials.php"; ?>
-				<?php require_once "include/location.php"; ?>
+				<?php require_once "include/az-breadcrumbs.php"; ?>
+				<?php require_once "include/catalog.php"; ?>
 			</div>
 		</div>
 	</div>
@@ -71,6 +64,8 @@
 	</div>
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="js/scripts.js"></script>
 

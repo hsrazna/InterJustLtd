@@ -1,8 +1,11 @@
 @import "vars";
 
 .az-news-item{
-	// padding-top: 20px;
+	margin-bottom: 20px;
 	border-bottom: 2px solid #ecf0f1;
+	&:last-child{
+		margin-bottom: 0;
+	}
 	h3{
 		font-family: "RobotoCondensedBold";
 		font-size: 18px;
