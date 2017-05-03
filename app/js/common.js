@@ -13,7 +13,7 @@ $(function() {
 		    navText:['<span class="prev_arrs1"></span>', '<span class="next_arrs1"></span>'],
 		    responsive:{
 		        0:{
-		            items:1
+		            items:2
 		        },
 		        600:{
 		            items:3
@@ -27,6 +27,7 @@ $(function() {
 	}
 
 	if($('ul.ah-contact-list li a').length>0){
+
 	    var tabContainers = $('.tabs-container > div');
 	    tabContainers.hide().filter(':first').show();
 	 
@@ -40,6 +41,7 @@ $(function() {
 	}
 
 	if($('ul.ah-allnews-list li a').length>0){
+
 	    var tabContainers = $('.ah-allnews-tabs-container > div');
 	    tabContainers.hide().filter(':first').show();
 	 
@@ -47,6 +49,20 @@ $(function() {
 	        tabContainers.hide();
 	        tabContainers.filter(this.hash).show();
 	        $('ul.ah-allnews-list a').parent('li').removeClass('selected');
+	        $(this).parent('li').addClass('selected');
+	        return false;
+	        }).filter(':first').click();
+	}
+
+	if($('ul.ah-serviceone-list li a').length>0){
+
+	    var tabContainers = $('.ah-serviceone-tabs-container > div');
+	    tabContainers.hide().filter(':first').show();
+	 
+	    $('ul.ah-serviceone-list li a').click(function(){
+	        tabContainers.hide();
+	        tabContainers.filter(this.hash).show();
+	        $('ul.ah-serviceone-list a').parent('li').removeClass('selected');
 	        $(this).parent('li').addClass('selected');
 	        return false;
 	        }).filter(':first').click();

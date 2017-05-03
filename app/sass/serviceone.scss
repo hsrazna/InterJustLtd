@@ -1,0 +1,118 @@
+@import "vars";
+
+
+.ah-serviceone-listbox{
+	width: 100%;
+	font-size: 0;
+}
+.ah-serviceone-listbox1{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+.ah-serviceone-listbox2{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+.ah-serviceone-listbox1-title{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 22px;
+	line-height: 20px;
+	margin: 20px 0px;
+}
+.ah-serviceone-listbox1-list{
+	padding: 0;
+	li{
+		display: block;
+		a{
+			display: block;
+			font-family: "ArimoRegular";
+			color: #3b65ba;
+			font-size: 16px;
+			line-height: 26px;
+			text-decoration: underline;
+			&:hover, &:active, &:focus{
+				text-decoration: none;
+			}
+		}
+	}
+}
+.ah-serviceone-title{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 26px;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin: 30px 0px 22px 0px;
+}
+.ah-serviceone-text{
+	display: block;
+	font-family: "ArimoRegular";
+	color: #3b413c;
+	font-size: 16px;
+	line-height: 20px;
+}
+.ah-serviceone-listtitle{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 22px;
+	line-height: 20px;
+}
+.ah-serviceone-sublist{
+	li{
+		position: relative;
+		display: block;
+		margin: 11px 0px;
+		&:before{
+			position: absolute;
+			content: "";
+			background: url(../img/ah-servlist.png);
+			width: 10px;
+			height: 10px;
+			left: -25px;
+			top: 5px;
+		}
+		a{
+			display: block;
+			font-family: "ArimoRegular";
+			color: #3b413c;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+.ah-serviceone-list{
+	width: 100%;
+	font-size: 0;
+	padding: 0;
+	li{
+		display: inline-block;
+		&:first-child{
+			width: 60%;
+		}
+		&:last-child{
+			width: 40%;
+		}
+		a{
+			display: inline-block;
+			width: 100%;
+			font-family: "ArimoBold";
+			color: #fff;
+			font-size: 14px;
+			line-height: 22px;
+			text-transform: uppercase;
+			background: #90a6d3;
+			padding: 7px 0px;
+			text-align: center;
+			&:hover, &:active, &:focus{
+				background: #3b65ba;
+				text-decoration: none;
+			}
+		}
+	}
+}
