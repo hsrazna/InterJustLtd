@@ -41,6 +41,10 @@
 	border: 1px solid #e4e5ed;
 	border-radius: 50%;
 	background: url(../img/ah-arr-blu_l.png) calc(100% - 30%) center no-repeat #fff;
+	&:hover{
+		background: url(../img/ah-arr-left.png) calc(100% - 30%) center no-repeat #fff;
+		transition: background 0.6s ease 0s;
+	}
 }
 .next_arrs1{
 	position: absolute;
@@ -51,6 +55,10 @@
 	border: 1px solid #e4e5ed;
 	border-radius: 50%;
 	background: url(../img/ah-arr-blu_r.png) calc(0% - -30%) center no-repeat #fff;
+	&:hover{
+		background: url(../img/ah-arr-righ.png) calc(0% - -30%) center no-repeat #fff;
+		transition: background 0.6s ease 0s;
+	}
 }
 .ah-slid-partners-wrapp{
 	overflow: hidden;

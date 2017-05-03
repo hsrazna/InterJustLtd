@@ -26,5 +26,18 @@ $(function() {
 
 	}
 
+	if($('ul.ah-contact-list li a').length>0){
+	    var tabContainers = $('.tabs-container > div');
+	    tabContainers.hide().filter(':first').show();
+	 
+	    $('ul.ah-contact-list li a').click(function(){
+	        tabContainers.hide();
+	        tabContainers.filter(this.hash).show();
+	        $('ul.ah-contact-list a').parent('li').removeClass('selected');
+	        $(this).parent('li').addClass('selected');
+	        return false;
+	        }).filter(':first').click();
+	}
+
 
 });
