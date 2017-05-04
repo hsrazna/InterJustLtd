@@ -54,6 +54,7 @@
 		}
 	}
 	a{
+		background: #fff;
 		display: inline-block;
 		width: 100%;
 		padding: 12px 14px 12px 5px;
@@ -75,6 +76,7 @@
 			color: #3b413c;
 			text-decoration: none;
 			box-shadow: 0 0 5px #d3d3d3 inset;
+			background: #f7f9fa;
 		}
 		&::before{
 			content: "";
@@ -92,8 +94,9 @@
 				background: transparent url('../img/az-sidebar-arrow1200.png') center no-repeat;
 			}
 		}
-		&.active{
+		&.active, &:hover{
 			box-shadow: 0 0 5px #d3d3d3 inset;
+			background: #f7f9fa;
 			&::before{
 				content: "";
 				top: 50%;
@@ -130,7 +133,7 @@
 
 	}
 	a{
-		&.active{
+		&.active, &:hover{
 			&::before{
 				border-left: 3px solid #e74b3c;
 				@include mobile(1200){

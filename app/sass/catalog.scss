@@ -23,7 +23,7 @@
 	width: 100% !important;
 	outline: 0;
 	.btn{
-		background-color: transparent !important;
+		background-color: #fff !important;
 		color: #3b413c !important;
 		outline: 0 !important;
 		border: 1px solid #bcbcbc !important;
@@ -111,6 +111,7 @@
 			display: inline-block;
 			border: 1px solid #bfc0c0;
 			border-radius: 50%;
+			background: #fff;
 		}
 	}
 	input[type="radio"]:checked+label{
