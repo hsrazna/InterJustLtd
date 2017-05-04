@@ -57,7 +57,7 @@ $(function() {
 	if($('ul.ah-serviceone-list li a').length>0){
 
 	    var tabContainers = $('.ah-serviceone-tabs-container > div');
-	    tabContainers.hide().filter(':first').show();
+	    tabContainers.hide().eq(1).show();
 	 
 	    $('ul.ah-serviceone-list li a').click(function(){
 	        tabContainers.hide();
@@ -65,7 +65,7 @@ $(function() {
 	        $('ul.ah-serviceone-list a').parent('li').removeClass('selected');
 	        $(this).parent('li').addClass('selected');
 	        return false;
-	        }).filter(':first').click();
+	        });
 	}
 
 
