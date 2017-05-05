@@ -1,0 +1,73 @@
+@import "vars";
+
+
+
+.ah-reviews-span{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 12px;
+}
+.ah-reviews-item{
+	display: inline-block;
+	text-align: center;
+}
+.ah-reviews-imgbox{
+	display: inline-block;
+	position: relative;
+}
+.ah-reviews-link{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/ah-oneobj-icon.png) center center no-repeat rgba(59, 101, 186, 0.5);
+}
+.ah-reviews-rowwrapp{
+	width: 100%;
+	margin: 20px 0px;
+}
+.ah-reviews-marg{
+	margin-right: 0px;
+	@include mobile(768){
+		margin-right: 50px;
+	}
+	@include mobile(992){
+		margin-right: 22px;
+	}
+	@include mobile(1200){
+		margin-right: 46px;
+	}
+}
+.ah-reviews-bottomlink{
+	display: inline-block;
+	font-family: "ArimoBold";
+	color: #fff;
+	font-size: 12px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	max-width: 133px;
+	height: 35px;
+	background: #3b65ba;
+	border: 1px solid transparent;
+	margin-top: 25px;
+	&:hover, &:focus, &:active{
+		border: 1px solid #3b65ba;
+		color: #3b65ba;
+		background: transparent;
+		transition: background 0.6s ease 0s;
+		text-decoration: none;
+	}
+}
+.ah-reviews-linkbox{
+	text-align: center;
+}
+.ah-reviews-rowwrapp{
+	text-align: center;
+}

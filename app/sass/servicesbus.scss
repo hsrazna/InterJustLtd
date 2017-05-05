@@ -1,0 +1,78 @@
+@import "vars";
+
+
+
+
+.ah-servicesbus-title{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 22px;
+	line-height: 20px;
+	margin-top: 15px;
+	text-align: center;
+	@include mobile(768){
+		text-align: left;
+	}
+}
+.ah-servicesbus-left, .ah-servicesbus-right{
+	display: inline-block;
+}
+.ah-servicesbus-item{
+	width: 100%;
+	font-size: 0;
+	background: #fff;
+	padding: 40px 40px 40px 25px;
+	border-left: 2px solid #3b65ba;
+	margin: 10px 0px;
+	cursor: pointer;
+	&:hover, &:active{
+		box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.16);
+		transition: box-shadow 0.4s ease 0s;
+	}
+}
+.ah-servicesbus-left{
+	width: 26%;
+	vertical-align: top;
+	margin-top: 10px;
+	@include mobile(768){
+		width: 10%;
+		margin-top: 0px;
+	}
+}
+.ah-servicesbus-right{
+	width: 74%;
+	vertical-align: middle;
+	padding-left: 10px;
+	@include mobile(768){
+		width: 90%;
+		padding-left: 30px;
+	}
+	@include mobile(992){
+		padding-left: 10px;
+	}
+}
+.ah-servicesbus-span{
+	float: none;
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 16px;
+	line-height: 18px;
+	margin-top: 7px;
+	@include mobile(992){
+		display: inline-block;
+		float: left;
+	}
+}
+.ah-servicesbus-link{
+	display: block;
+	float: none;
+	@include mobile(992){
+		display: inline-block;
+		float: right;
+	}
+}
+.ah-more-news1{
+	text-align: left !important;
+}

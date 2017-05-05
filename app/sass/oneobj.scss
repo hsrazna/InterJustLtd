@@ -1,0 +1,78 @@
+@import "vars";
+
+.ah-oneobj-title{
+	display: inline-block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.ah-oneobj-imgbox{
+	position: relative;
+}
+.ah-oneobj-imgbox320{
+	display: inline-block;
+	position: relative;
+	margin: 10px 0px;
+}
+.item320{
+	text-align: center;
+	// margin: 10px 0px;
+}
+.ah-oneobj-itemspan{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: url(../img/ah-oneobj-icon.png) center center no-repeat rgba(59, 101, 186, 0.5);
+}
+.mfp-close{
+	cursor: pointer !important;
+}
+.ah-oneobj-slider{
+	position: relative;
+}
+.prev_1arrs{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 30px;
+	height: 100%;
+	background: url(../img/ah-oneobj-arrl.png) center center no-repeat rgba(0, 0, 0, 0.0);
+	&:hover{
+		background: url(../img/ah-oneobj-arrl.png) center center no-repeat rgba(0, 0, 0, 0.3);
+		transition: background 0.6s ease 0s;
+	}
+}
+.next_1arrs{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 30px;
+	height: 100%;
+	background: url(../img/ah-oneobj-arrr.png) center center no-repeat rgba(0, 0, 0, 0.0);
+	&:hover{
+		background: url(../img/ah-oneobj-arrr.png) center center no-repeat rgba(0, 0, 0, 0.3);
+		transition: background 0.6s ease 0s;
+	}
+}
+.ah-oneobj-box-title{
+	display: block;
+	font-family: "ArimoBold";
+	color: #3b413c;
+	font-size: 22px;
+	line-height: 20px;
+	margin-bottom: 12px;
+	text-align: center;
+	@include mobile(768){
+		text-align: left;
+	}
+}
+.ah-oneobj-box{
+	margin-top: 25px;
+}

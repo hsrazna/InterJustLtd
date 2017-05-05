@@ -26,6 +26,31 @@ $(function() {
 
 	}
 
+	if($('.ah-oneobj-slider').length>0){
+
+		$(".ah-oneobj-slider").owlCarousel({
+		    loop:true,
+		    margin:20,
+		    nav:true,
+		    autoplay:false,
+		    smartSpeed:1000,
+		    autoplayTimeout:2000,
+		    navText:['<span class="prev_1arrs"></span>', '<span class="next_1arrs"></span>'],
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:2
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		});
+
+	}
+
 	if($('ul.ah-contact-list li a').length>0){
 
 	    var tabContainers = $('.tabs-container > div');
@@ -66,6 +91,34 @@ $(function() {
 	        $(this).parent('li').addClass('selected');
 	        return false;
 	        });
+	}
+
+	if($('.ah-oneobj-itemspan').length>0){
+
+		$('.ah-oneobj-itemspan').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			mainClass: 'mfp-img-mobile',
+			image: {
+				verticalFit: true
+			}
+			
+		});
+
+	}
+
+	if($('.ah-reviews-link').length>0){
+
+		$('.ah-reviews-link').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			mainClass: 'mfp-img-mobile',
+			image: {
+				verticalFit: true
+			}
+			
+		});
+
 	}
 
 
